@@ -1,51 +1,92 @@
+/* Reset básico */
 * {
-    
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
 }
+
 body {
     background-color: #F6F6F6;
-    
-    
-    
+    color: #333;
 }
+
+/* Estilização do cabeçalho */
 header {
-    display:flex;
+    display: flex;
     align-items: center;
-    background-color:#D4BD8C ;
-    width: 100%;
-    height: 10vh;
-    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #D4BD8C;
+    padding: 20px;
 }
-.logo{
-    width: 200px;
-    height: 200px;
-    margin-left: 15px;
-    
-    
+
+.logo {
+    width: 180px;
 }
 
 .menu {
-    display: flex;
-    font-size: 30px;
-    gap:3cm;
-    
-}
-li {
     list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
-a {
+.menu a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 25px;
 }
 
-section.banner {
+.botao-agendar {
+    background-color: #8B5E3C;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Estilização do banner */
+.banner {
     background-image: url('../imagens-fundo/bg-atendendo.jpg');
-    height: 89vh;
-    background-repeat: no-repeat;
+    height: 70vh;
+    background-position: center;
     background-size: cover;
-    
-
 }
 
+/* Seções gerais */
+.servicos, .sobre, .contato {
+    text-align: center;
+    padding: 50px 20px;
+    
+}    
+
+
+/* Seção de serviços */
+.container-servicos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.servico {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.servico img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #8B5E3C;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}

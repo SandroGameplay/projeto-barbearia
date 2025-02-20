@@ -1,37 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ap barbearia</title>
+    <title>AP Barbearia</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div>
-            <img class="logo" src="logo/CRA PNG BARBEARIA PREMIUM.png" alt="logo">
+            <img class="logo" src="logo/CRA PNG BARBEARIA PREMIUM.png" alt="Logo da Barbearia">
         </div>
-    
         <nav>
             <ul class="menu">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Agende Online!</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#agendar" class="botao-agendar">Agende Online!</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
+        <section id="inicio" class="banner"></section>
+        
+        <section id="servicos" class="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="container-servicos">
+                <div class="servico">
+                    <img src="fotos-cortes-barbas/01.jpeg" alt="Corte de cabelo">
+                    <h3>Corte de Cabelo</h3>
+                    <p>Estilos modernos e clássicos para todos os gostos.</p>
+                </div>
+                <div class="servico">
+                    <img src="fotos-cortes-barbas/11.jpeg" alt="Barba bem feita">
+                    <h3>Barba</h3>
+                    <p>Design e acabamento profissional para sua barba.</p>
+                </div>
+                <div class="servico">
+                    <img src="fotos-cortes-barbas/12.jpeg" alt="Pacote Premium">
+                    <h3>Pacote Premium</h3>
+                    <p>Uma experiência completa com corte e barba.</p>
+                </div>
+            </div>
+        </section>
 
-        <section class="banner"></section>
+        <section id="sobre" class="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Fundada com paixão pela arte da barbearia, oferecemos um ambiente sofisticado e serviços de alta qualidade.</p>
+        </section>
 
-
+        <section id="contato" class="contato">
+            <h2>Entre em Contato</h2>
+            <p>Endereço: Rua Exemplo, 123 - Cidade</p>
+            <p>Telefone: (99) 99999-9999</p>
+            <p>Email: contato@apbarbearia.com</p>
+        </section>
     </main>
 
-    <footer></footer>
-
-    
+    <footer>
+        <p>&copy; 2025 AP Barbearia. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
