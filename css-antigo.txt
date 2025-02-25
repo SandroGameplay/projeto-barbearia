@@ -15,7 +15,6 @@ body {
     background-size: cover;
     background-position: top left;
     background-attachment: fixed;
-    font-size: 1rem;
 }
 
 /* Estilização do cabeçalho */
@@ -33,10 +32,6 @@ header {
     height: 20vh;
 }
 
-h2, h3 {
-    font-size: 1.5rem; /* Fontes de título em unidades relativas */
-}
-
 .logo {
     width: 180px;
 }
@@ -51,7 +46,7 @@ h2, h3 {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 25px;
 }
 
 .botao-agendar {
@@ -82,7 +77,6 @@ h2, h3 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 
@@ -91,8 +85,7 @@ h2, h3 {
     background: white;
     padding: 15px;
     border-radius: 10px;
-    width: 100%;
-    height: auto;
+    width: 250px;
     text-align: center;
 }
 
@@ -107,68 +100,4 @@ footer {
     text-align: center;
     color: white;
     padding: 15px;
-}
-
-
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    header {
-        flex-direction: column;
-        height: auto;  /* Ajuste de altura do cabeçalho */
-    }
-
-    .logo {
-        width: 150px; /* Logo menor para telas pequenas */
-    }
-
-    .menu {
-        flex-direction: column; /* Menu em coluna */
-        align-items: center;
-        gap: 15px;
-    }
-
-    .menu a {
-        font-size: 1.2rem;
-    }
-
-    .container-servicos {
-        flex-direction: column; /* Empilhar os serviços */
-        align-items: center;
-    }
-
-    .servico {
-        width: 80%; /* Largura maior em dispositivos móveis */
-        margin-bottom: 20px; /* Espaço entre os serviços */
-    }
-
-    footer {
-        font-size: 14px;
-        padding: 10px;
-    }
-}
-
-/* Para telas médias (tablets) */
-@media (max-width: 900px) {
-    .container-servicos {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    .servico {
-        width: 45%; /* Largura maior para tablets */
-    }
-}
-
-/* Para telas grandes (desktop) */
-@media (min-width: 901px) {
-    .container-servicos {
-        flex-direction: row;
-    }
-
-    .servico {
-        width: 30%; /* Para desktop, 3 colunas */
-    }
 }
