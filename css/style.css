@@ -10,19 +10,30 @@
 body {
     background-color: #F6F6F6;
     color: #333;
+    background-image: url('../imagens-fundo/bg-atendendo02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
 }
 
 /* Estilização do cabeçalho */
 header {
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #D4BD8C;
-    padding: 20px;
+    justify-content: space-around;
+    background-color: #848477cb;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
 }
 
 .logo {
-    width: 180px;
+    width: 100px;
 }
 
 .menu {
@@ -35,7 +46,7 @@ header {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 0.8rem;
 }
 
 .botao-agendar {
@@ -48,8 +59,8 @@ header {
 /* Estilização do banner */
 .banner {
     background-image: url('../imagens-fundo/bg-atendendo.jpg');
-    height: 70vh;
-    background-position: center;
+    height: 80vh;
+    background-position: top center;
     background-size: cover;
 }
 
