@@ -9,13 +9,14 @@
 
 body {
     background-color: #F6F6F6;
-    color: #333;
+    color: #050705;
     background-image: url('../imagens-fundo/bg-atendendo02.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
     background-attachment: fixed;
     font-size: 1rem;
+    text-align: center; /* Centraliza o texto */
 }
 
 /* Estilização do cabeçalho */
@@ -49,7 +50,7 @@ h2, h3 {
 
 .menu a {
     text-decoration: none;
-    color: black;
+    color: rgb(33, 26, 26);
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -70,12 +71,17 @@ h2, h3 {
 }
 
 /* Seções gerais */
-.servicos, .sobre, .contato {
+.servicos{
     text-align: center;
     padding: 50px 20px;
-    
-}    
+} 
 
+.nossos-servicos {
+    background-color: rgba(244, 167, 29, 0.8); /* Fundo laranja com transparência */
+    padding: 5px 10px; /* Pequeno espaço ao redor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: inline-block; /* Mantém o fundo apenas no texto */
+}
 
 /* Seção de serviços */
 .container-servicos {
@@ -100,6 +106,16 @@ h2, h3 {
     width: 100%;
     border-radius: 5px;
 }
+
+.rodape-sobre-nos {
+    background-color: rgba(244, 167, 29, 0.8); /* Fundo laranja com transparência */
+    padding: 5px 10px; /* Pequeno espaço ao redor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: inline-block; /* Mantém o fundo apenas no texto */
+    
+    
+}
+
 
 /* Rodapé */
 footer {

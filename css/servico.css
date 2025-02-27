@@ -1,0 +1,56 @@
+body {
+    background-image: url(../imagens-fundo/bg-atendendo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz o body ocupar a tela inteira */
+    margin: 0; /* Remove margens padrão */
+    background-color: #F6F6F6; /* Define uma cor de fundo opcional */
+    text-align: center; /* Garante que o texto fique centralizado */
+}
+
+header {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #848477cb;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+}
+
+.logo {
+    width: 180px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(33, 26, 26);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.botao-agendar {
+    background-color: #8B5E3C;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+.texto {
+    max-width: 80%; /* Limita a largura do texto */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    line-height: 1.5; /* Melhora a leitura */
+    margin-top: -100px; /* Dá um espaço entre o topo */
+}
