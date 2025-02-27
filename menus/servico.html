@@ -10,11 +10,12 @@
 
     <header>
         <div>
-            <img class="logo" src="../logo/CRA PNG BARBEARIA PREMIUM MAIS CLARA.png" alt="Logo da Barbearia">
+            <img class="logo" src="../logo/logo-editada.png" alt="Logo da Barbearia">
         </div>
         <nav>
             <ul class="menu">
                 <li><a href="../index.html">Início</a></li>
+                <li><a href="./servico.html">Serviços</a></li>
                 <li><a href="./sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="agendeonline.html" class="botao-agendar">Agende Online!</a></li>
@@ -24,5 +25,17 @@
 
     <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptate optio quasi modi incidunt officia quibusdam cumque illo saepe? Hic, non. Pariatur explicabo consequuntur animi nesciunt distinctio, doloribus est obcaecati.</p>
     
+    <script>
+        // Obter todos os links do menu
+        const links = document.querySelectorAll('.menu a');
+        
+        // Loop para verificar a URL de cada link
+        links.forEach(link => {
+            // Se a URL do link for igual à URL da página atual, adiciona a classe "active"
+            if (window.location.href.includes(link.href)) {
+                link.classList.add('active');
+            }
+        });
+    </script>  
 </body>
 </html>

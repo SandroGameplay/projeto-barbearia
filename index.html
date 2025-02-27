@@ -67,5 +67,17 @@
     <footer>
         <p>&copy; 2025 AP Barbearia. Todos os direitos reservados.</p>
     </footer>
+    <script>
+        // Obter todos os links do menu
+        const links = document.querySelectorAll('.menu a');
+        
+        // Loop para verificar a URL de cada link
+        links.forEach(link => {
+            // Se a URL do link for igual à URL da página atual, adiciona a classe "active"
+            if (window.location.href.includes(link.href)) {
+                link.classList.add('active');
+            }
+        });
+    </script>
 </body>
 </html>

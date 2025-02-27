@@ -1,3 +1,12 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
 body {
     background-image: url(../imagens-fundo/bg-atendendo.jpg);
     background-repeat: no-repeat;
@@ -46,6 +55,22 @@ header {
     padding: 10px 15px;
     color: white;
     border-radius: 5px;
+}
+
+/* Estilo para o link ativo */
+.menu a.active {
+    position: relative;
+    color: #030202; /* Cor do texto para o link ativo */
+}
+
+.menu a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Distância do risco para baixo */
+    left: 0;
+    width: 100%;
+    height: 3px; /* Espessura da linha */
+    background-color: #030202; /* Cor do risco */
 }
 
 .texto {
